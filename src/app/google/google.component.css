@@ -1,0 +1,49 @@
+.title {
+    color: darkblue;
+
+}
+
+.link {
+    color: lightblue;
+    
+}
+
+.snippet {
+    color: black;
+
+}
+
+
+a:link {    /* unvisited link */
+    color: #ff0000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:visited {    /* visited link */
+    color: #ff00ff;
+}
+a:hover {    /* mouse over link */
+    color: #00ff00;
+    border-bottom: none;
+}
+a:active {    /* active link */
+    color: #00ffff;
+}
+
+
+.search {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.search input {
+    background-color: lightcyan;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    text-align: center;
+    color: grey;
+    font-size: 1em;
+
+}

@@ -1,0 +1,26 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onSearch()">
+    <input
+      type="text"
+      placeholder="Search"
+      name="searchItem"
+      [(ngModel)]="searchItem"
+    />
+  </form>
+</div>
+<ol>
+    <div class="container" *ngFor="let data of googleData">
+        <li>
+
+      <div class="title">
+        <h2>{{ data.title }}</h2>
+      </div>
+      <div class="link">
+        <a href="{{ data.link }}"> {{ data.link }} </a>
+      </div>
+      <div class="snippet">
+        <h4>{{ data.snippet }}</h4>
+      </div>
+      </li>
+    </div>
+</ol>
